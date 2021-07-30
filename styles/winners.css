@@ -1,0 +1,12 @@
+h1 {
+	background-color: var(--clrPrimaryTitle);
+	padding: var(--layoutPadding);
+	text-align: center;
+}
+
+p {
+	padding: var(--layoutPadding);
+	text-align: center;
+	max-width: 65ch;
+	margin: 0 auto;
+}

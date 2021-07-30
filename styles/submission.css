@@ -1,0 +1,104 @@
+/* OPENING */
+
+.opening {
+	padding: var(--layoutPadding);
+	background-color: var(--clrPrimaryTitle);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 2.5rem;
+}
+
+p {
+	text-align: center;
+	max-width: 65ch;
+}
+
+/* NOTIONS OF LIGHT */
+
+.notionsLight {
+	background-color: var(--offWhiteBG);
+	padding: var(--layoutPadding);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.notionsLight ul {
+	padding-left: 1rem;
+}
+
+.notions li {
+	max-width: 65ch;
+}
+
+h2 {
+	padding-bottom: 2.5rem;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	padding-bottom: 1.5rem;
+}
+
+.notionsLight strong {
+	color: var(--clrPrimary);
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+}
+
+.categories div {
+	max-width: 65ch;
+}
+
+.categories h4 {
+	padding: 1rem 0;
+}
+
+button {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--clrPrimary);
+	font-family: Montserrat;
+	font-weight: bold;
+	color: white;
+	margin-top: 2rem;
+	transition: transform 0.5s;
+}
+
+button:hover {
+	transform: scale(1.2);
+}
+
+@media screen and (min-width: 800px) {
+	.categories {
+		flex-direction: row;
+		justify-content: center;
+		max-width: 65ch;
+	}
+
+	.categories div {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.categories h4 {
+		text-align: center;
+	}
+
+	.categories ul {
+		-padding: 0 3.5rem;
+	}
+}

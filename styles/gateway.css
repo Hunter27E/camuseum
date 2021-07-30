@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	background-color: var(--clrPrimaryTitle);
+	padding: var(--layoutPadding);
+}
+
+section {
+	padding: 0 1em;
+	max-width: 65ch;
+	margin: 0 auto;
+}
+
+section:first-of-type {
+	padding-top: 2.5rem;
+}
+
+/* all except first */
+section + section {
+	padding-top: 1.5em;
+}
+
+section:last-of-type {
+	padding-bottom: 2.5rem;
+}
+
+.note span {
+	font-weight: bold;
+}

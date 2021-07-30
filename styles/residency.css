@@ -1,0 +1,66 @@
+/* OPENING */
+
+.opening {
+	background-color: var(--clrPrimaryTitle);
+	text-align: center;
+	padding: var(--layoutPadding);
+}
+
+h1 {
+	padding-bottom: 2.5rem;
+}
+
+p {
+	max-width: 65ch;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* RESIDENCY IMAGES */
+
+.residencyImages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2.5rem 0;
+	gap: 10px;
+}
+
+.residencyImages img {
+	width: 100%;
+	max-width: 850px;
+}
+
+/* RESIDENCY DETAILS */
+
+.residencyDetails {
+	padding: var(--layoutPadding);
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+p span {
+	color: var(--clrPrimary);
+}
+
+@media screen and (min-width: 750px) {
+	.residencyImages img {
+		width: 75%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.residencyImages {
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.residencyImages img {
+		width: 45%;
+	}
+}

@@ -1,0 +1,128 @@
+/* HEADER */
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+header img {
+	width: 100%;
+}
+
+header nav {
+	background-color: white;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+	/* add for og nav */
+	/* flex-wrap: wrap;
+	justify-content: space-evenly; */
+	gap: 10px;
+	padding: var(--layoutPadding);
+	width: 100%;
+	overflow-y: scroll; /* delete for og nav */
+}
+
+header nav li {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav li:hover a {
+	color: var(--clrPrimary);
+	font-weight: bold;
+}
+
+#activeTab {
+	color: var(--clrPrimary);
+}
+
+/* prevents bolding on hover from causing layout shift */
+header nav li::before {
+	display: block;
+	content: attr(data-text);
+	font-weight: bold;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+@media screen and (min-width: 700px) {
+	header {
+		flex-direction: row;
+	}
+
+	header img {
+		width: 40%;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60%;
+	}
+
+	/* styles for putting nav bar on baseline */
+	/* nav {
+		align-items: baseline;
+	}
+	header nav ul {
+		padding-bottom: 0;
+	} */
+}
+
+@media screen and (min-width: 1000px) {
+	header img {
+		width: 25%;
+	}
+
+	header nav ul {
+		justify-content: space-evenly; /* delete for og nav */
+	}
+
+	nav {
+		width: 75%;
+	}
+}
+
+/* FOOTER */
+
+footer {
+	background-color: var(--footerBG);
+	padding: var(--layoutPadding);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+footer h6,
+#mc_embed_signup_scroll label {
+	font-size: 1rem;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.socialMedia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.socialMedia a {
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+.thanks a {
+	color: black;
+}

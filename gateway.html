@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<link rel="shortcut icon" href="images/favicon.png" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/headerfooter.css" />
+		<link rel="stylesheet" href="styles/gateway.css?v=july16" />
+		<!-- MailChimp Styles -->
+		<link
+			href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<title>GATEWAY | Bolan Museum</title>
+	</head>
+	<body>
+		<header>
+			<img
+				src="images/bca_logo.png"
+				alt="BCA Logo"
+				onclick="window.location='index.html'"
+			/>
+			<nav>
+				<ul>
+					<li data-text="Home"><a href="index.html">Home</a></li>
+					<li data-text="Submission">
+						<a href="submission.html">Submission</a>
+					</li>
+					<li data-text="Jury"><a href="jury.html">Jury</a></li>
+					<li data-text="Winners"><a href="winners.html">Winners</a></li>
+					<li data-text="Residency"><a href="residency.html">Residency</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Agreement & Description</h1>
+			<section class="fee">
+				<h2>Submission Fee</h2>
+				<p>
+					Non-refundable submission fee is $45 for submitting up to two (2)
+					works. Entry fee is payable online by credit card or PayPal.
+				</p>
+			</section>
+			<section class="agreement">
+				<h2>Agreement</h2>
+				<p>
+					Artists are responsible for printing their digital artworks and
+					shipping them to and from the Museum. Shipping costs are carried by
+					the artists. The Museum is not responsible for artwork in transit.
+					Artwork abandoned at the museum after exhibition will be considered a
+					donation and becomes possession of the Bolan Contemporary Art Museum.
+					Entries that do not meet eligibility or artwork specifications
+					criteria may not be judged or admitted to the exhibition.
+				</p>
+			</section>
+			<section class="insurance">
+				<h2>Insurance, Publicity, Sales</h2>
+				<p>
+					While on premises, the Museum will insure work for the value given by
+					the artist. For art valued at or over $1000, an appraisal may be
+					required at the artist's expense. The Museum reserves the right to
+					photograph and/or reproduce digital images of work for any related or
+					educational purpose. The Museum is not a sales venue. Parties
+					interested in purchasing work will be directed to the artist involved.
+				</p>
+			</section>
+			<section class="winning">
+				<h2>Benefits of Winning</h2>
+				<p>
+					Becoming a Bolan Contemporary Art Award Winner will boost your career
+					by providing global media exposure, showing your work to an
+					international audience via our website, newsletters, and social media
+					network, and being ranked by our panel of industry-renowned jurors
+					from all around the world. All exhibitionists will receive a Winner
+					Certificate to promote their success. The mission of the Bolan
+					Contemporary Art project is to raise awareness of local, national and
+					international artwork and artists. Our goal is to excite, engage, and
+					serve diverse communities through our collections, exhibitions, and
+					educational programs. We connect generations of people to their
+					cultural heritage and exceptional art. Our marketing team of dedicated
+					art lovers and fans will promote your artwork and your artist
+					personality the best way they can. Artists, who won the awards, will
+					be asked to provide in formation and materials about their career,
+					goals, photos of artwork, resumes or anything they choose for us to
+					post on Social Media and in the Press.
+				</p>
+			</section>
+			<section class="note">
+				<p>
+					<span>Note</span>: You will need a Google account to submit your
+					artwork once the submission fee has been paid.
+				</p>
+			</section>
+			<section class="paypal">
+				<!--PAYPAL CODE-->
+				<script
+					src="https://www.paypal.com/sdk/js?client-id=Af5AEOjlRY-aOxrz0gCB9FcPWR_xcOAdMPuZvCetsKRIOlS-KCommu9NVnvVI12SOUE7RdA6Tyczap3o"
+				>
+					// Replace YOUR_CLIENT_ID with your sandbox client ID
+				</script>
+
+				<div id="paypal-button-container" align="center"></div>
+
+				<!-- Add the checkout buttons, set up the order and approve the order -->
+				<script>
+					paypal
+						.Buttons({
+							createOrder: function (data, actions) {
+								return actions.order.create({
+									purchase_units: [
+										{
+											amount: {
+												value: '45.00',
+											},
+										},
+									],
+								});
+							},
+							onApprove: function (data, actions) {
+								return actions.order.capture().then(function (details) {
+									window.location.replace(
+										'https://docs.google.com/forms/d/e/1FAIpQLSdgYgHunLl9__MZxwzapi56weAU0MyOagl3JLxYwDkggbhgsw/viewform?usp=sf_link'
+									);
+								});
+							},
+						})
+						.render('#paypal-button-container'); // Display payment options on your web page
+				</script>
+			</section>
+		</main>
+		<footer>
+			<section id="mc_embed_signup">
+				<form
+					action="https://bolancontemporaryart.us6.list-manage.com/subscribe/post?u=6b4e39f2418471175b57dffed&amp;id=958021556c"
+					method="post"
+					id="mc-embedded-subscribe-form"
+					name="mc-embedded-subscribe-form"
+					class="validate"
+					target="_blank"
+					novalidate
+				>
+					<div id="mc_embed_signup_scroll">
+						<label for="mce-EMAIL">Subscribe to our email list!</label>
+						<input
+							type="email"
+							value=""
+							name="EMAIL"
+							class="email"
+							id="mce-EMAIL"
+							placeholder="email address"
+							required
+						/>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px" aria-hidden="true">
+							<input
+								type="text"
+								name="b_6b4e39f2418471175b57dffed_958021556c"
+								tabindex="-1"
+								value=""
+							/>
+						</div>
+						<div class="clear">
+							<input
+								type="submit"
+								value="Subscribe"
+								name="subscribe"
+								id="mc-embedded-subscribe"
+								class="button"
+							/>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="socialMedia">
+				<h6>Stay Connected!</h6>
+				<div>
+					<a href="https://www.instagram.com/bolancontemporaryart">
+						<img src="images/iconmonstr-instagram-11.svg" alt="Instagram" />
+					</a>
+					<a
+						href="https://www.facebook.com/Bolan-Contemporary-Art-100434562190916"
+					>
+						<img src="images/iconmonstr-facebook-5.svg" alt="Facebook" />
+					</a>
+					<a
+						href="https://www.linkedin.com/company/bolan-contemporary-art-museum"
+						><img src="images/iconmonstr-linkedin-5.svg" alt="LinkedIn"
+					/></a>
+				</div>
+			</section>
+			<section class="thanks">
+				<h6>
+					Thanks to the <a href="thanks.html">team</a> that helped create this
+					project.
+				</h6>
+			</section>
+		</footer>
+	</body>
+</html>

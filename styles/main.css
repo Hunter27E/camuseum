@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&text=Now%20Open!&display=swap');
+
+:root {
+	--clrPrimary: #ae212f;
+	--clrAccent: #e4bf50;
+	--clrPrimaryTitle: #ae212f88;
+	--clrAccentBG: #f5d36d;
+	--layoutPadding: 2.5rem 1rem;
+	--offWhiteBG: rgb(244, 241, 241);
+	--footerBG: #3c489bdd;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Montserrat, sans-serif;
+	background-color: var(--offWhiteBG);
+	line-height: 1.35;
+}
+
+/* GUIDELINES
+
+• section padding: layoutPadding
+• flexbox gap: 10px or space-evenly
+• css comment headers: one per html section
+• content left/right padding: 1rem from side of viewport
+• title/h1 padding: 2.5rem total padding top and bottom
+• section widths: text and some multimedia sections should have 65ch max-widths
+
+*/
