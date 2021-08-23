@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="images/favicon.png" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/headerfooter.css" />
-		<link rel="stylesheet" href="styles/gateway.css?v=july16" />
+		<link rel="stylesheet" href="styles/gateway.css?v=aug23" />
 		<!-- MailChimp Styles -->
 		<link
 			href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
@@ -97,41 +97,11 @@
 					artwork once the submission fee has been paid.
 				</p>
 			</section>
-			<section class="paypal">
-				<!--PAYPAL CODE-->
-				<script
-					src="https://www.paypal.com/sdk/js?client-id=Af5AEOjlRY-aOxrz0gCB9FcPWR_xcOAdMPuZvCetsKRIOlS-KCommu9NVnvVI12SOUE7RdA6Tyczap3o"
+			<section class="agreeBtn">
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLScHnckCthNbZgmr7xYU0AEwJsaouCHSLI0K0hfBNNDyZe6oJA/viewform?usp=sf_link"
+					>I Agree</a
 				>
-					// Replace YOUR_CLIENT_ID with your sandbox client ID
-				</script>
-
-				<div id="paypal-button-container" align="center"></div>
-
-				<!-- Add the checkout buttons, set up the order and approve the order -->
-				<script>
-					paypal
-						.Buttons({
-							createOrder: function (data, actions) {
-								return actions.order.create({
-									purchase_units: [
-										{
-											amount: {
-												value: '45.00',
-											},
-										},
-									],
-								});
-							},
-							onApprove: function (data, actions) {
-								return actions.order.capture().then(function (details) {
-									window.location.replace(
-										'https://docs.google.com/forms/d/e/1FAIpQLSdgYgHunLl9__MZxwzapi56weAU0MyOagl3JLxYwDkggbhgsw/viewform?usp=sf_link'
-									);
-								});
-							},
-						})
-						.render('#paypal-button-container'); // Display payment options on your web page
-				</script>
 			</section>
 		</main>
 		<footer>
