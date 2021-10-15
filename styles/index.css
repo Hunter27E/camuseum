@@ -18,8 +18,9 @@
 	padding: var(--layoutPadding);
 }
 
-.hero h1 span {
+.hero h1 a {
 	color: var(--clrPrimary);
+	cursor: pointer;
 }
 
 /* INTRO */
@@ -41,12 +42,12 @@
 	max-width: 65ch;
 }
 
-.intro span {
+.intro #artProjLink {
 	color: var(--clrPrimary);
 	font-weight: bold;
 }
 
-.intro a {
+.intro #missionLink {
 	color: #3c489b;
 }
 
