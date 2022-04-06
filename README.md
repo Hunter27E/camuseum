@@ -1,1 +1,1 @@
-# Bolan Contemporary Art Museum Website
+# Generic Contemporary Art Museum Website
