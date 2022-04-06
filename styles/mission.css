@@ -13,6 +13,8 @@ h1 {
 
 .statement {
 	padding-bottom: 2.5rem;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 .statement img {
@@ -31,7 +33,6 @@ h3 {
 }
 
 .statement p {
-	-max-width: 65ch;
 	padding: 0 1rem;
 }
 
@@ -55,7 +56,6 @@ h3 {
 		padding: 0 1rem 0 1.5rem;
 	}
 
-	/* all except first */
 	.statement p + p {
 		padding-top: 1.5rem;
 	}
